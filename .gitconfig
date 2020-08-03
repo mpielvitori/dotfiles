@@ -1,0 +1,33 @@
+[color]
+	ui = auto
+[color "diff"]
+	meta = blue
+	frag = white
+	old = red bold
+	new = green bold
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = ~/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = ~/.stCommitMsg
+[merge]
+	tool = diffmerge
+[diff]
+	guitool = tkdiff
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge $LOCAL $REMOTE
+	trustExitCode = true
+[user]
+	name = Martin Pielvitori
+	email = martinpielvitori@gmail.com

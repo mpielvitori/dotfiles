@@ -6,12 +6,22 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export LC_ALL=en_US.UTF-8
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 export PATH=$PATH:~/apache-maven-3.6.0/bin:$JAVA_HOME/bin:$GEMFIRE/bin:/usr/local/sbin:/usr/local/Cellar/rabbitmq/3.7.12/sbin
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # P9K_MODE='nerdfont-complete'
 P9K_MODE='awesome-mapped-fontconfig'
+
+# -------------------------------------------------
+#                      Alias
+# -------------------------------------------------
+
+# Gollum alias
+alias docker-gollum='docker run -it --rm --name gollum \
+  -p 4567:4567 \
+  -v $(pwd):/root/wikidata winkapp/docker-gollum  \
+  --allow-uploads --live-preview'
 
 # Git alias
 alias glog='git log --oneline --graph --decorate --all'
