@@ -13,41 +13,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # P9K_MODE='nerdfont-complete'
 P9K_MODE='awesome-mapped-fontconfig'
 
-# -------------------------------------------------
-#                      Alias
-# -------------------------------------------------
-
-# Gollum alias
-alias docker-gollum='docker run -it --rm --name gollum \
-  -p 4567:4567 \
-  -v $(pwd):/root/wikidata winkapp/docker-gollum  \
-  --allow-uploads --live-preview'
-
-# Git alias
-alias glog='git log --oneline --graph --decorate --all'
-alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gs='git status'
-alias gsh='git stash'
-alias gd='git diff'
-alias gdt='git difftool'
-alias gc='git checkout'
-alias gcm='git checkout master'
-alias gcd='git checkout dev'
-alias gcs='git checkout stage'
-alias gp='git pull --rebase origin'
-alias gfm='git fetch origin master'
-alias gfd='git fetch origin dev'
-alias gfo='git fetch origin'
-alias gfa='git fetch --all'
-alias grm='git rebase origin/master'
-alias grd='git rebase origin/dev'
-alias gfp='git fetch --all --prune'
-
-# Docker alias
-alias dps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
-alias dpsa='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
-alias dimg='docker images'
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -87,3 +52,37 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
+# -------------------------------------------------
+#                      Alias
+# -------------------------------------------------
+
+# Gollum alias
+alias docker-gollum='docker run -it --rm --name gollum \
+  -p 4567:4567 \
+  -v $(pwd):/root/wikidata winkapp/docker-gollum  \
+  --allow-uploads --live-preview'
+
+# Git alias
+alias glog='git log --oneline --graph --decorate --all'
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gs='git status'
+alias gsh='git stash'
+alias gd='git diff'
+alias gdt='git difftool'
+alias gc='git checkout'
+alias gcm='git checkout master'
+alias gcd='git checkout dev'
+alias gcs='git checkout stage'
+alias gp='git pull --rebase origin'
+alias gfm='git fetch origin master'
+alias gfd='git fetch origin dev'
+alias gfo='git fetch origin'
+alias gfa='git fetch --all'
+alias grm='git rebase origin/master'
+alias grd='git rebase origin/dev'
+alias gfp='git fetch --all --prune'
+
+# Docker alias
+alias dps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
+alias dpsa='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}"'
+alias dimg='docker images'
