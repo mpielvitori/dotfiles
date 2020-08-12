@@ -12,6 +12,7 @@
 	required = true
 [core]
 	excludesfile = ~/.gitignore_global
+  editor = vim
 [commit]
 	template = ~/.stCommitMsg
 [merge]
