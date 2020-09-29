@@ -1,5 +1,5 @@
 {
-  "Thin Strokes" : 3,
+  "Thin Strokes" : 4,
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
     "Red Component" : 0,
@@ -25,6 +25,7 @@
     "Green Component" : 0.874359130859375
   },
   "Right Option Key Sends" : 0,
+  "Show Status Bar" : true,
   "Character Encoding" : 4,
   "Selection Color" : {
     "Red Component" : 0.75813239812850952,
@@ -56,6 +57,99 @@
   ],
   "Scrollback Lines" : 1000,
   "Draw Powerline Glyphs" : true,
+  "Status Bar Layout" : {
+    "components" : [
+      {
+        "class" : "iTermStatusBarCPUUtilizationComponent",
+        "configuration" : {
+          "knobs" : {
+            "base: priority" : 5,
+            "base: compression resistance" : 1,
+            "shared text color" : {
+              "Red Component" : 0.90000000000000002,
+              "Color Space" : "sRGB",
+              "Blue Component" : 0.63,
+              "Alpha Component" : 1,
+              "Green Component" : 0.63
+            }
+          },
+          "layout advanced configuration dictionary value" : {
+            "font" : ".AppleSystemUIFont 12",
+            "algorithm" : 0,
+            "auto-rainbow style" : 1
+          }
+        }
+      },
+      {
+        "class" : "iTermStatusBarMemoryUtilizationComponent",
+        "configuration" : {
+          "knobs" : {
+            "base: priority" : 5,
+            "base: compression resistance" : 1,
+            "shared text color" : {
+              "Red Component" : 0.67859999999999998,
+              "Color Space" : "sRGB",
+              "Blue Component" : 0.63,
+              "Alpha Component" : 1,
+              "Green Component" : 0.90000000000000002
+            }
+          },
+          "layout advanced configuration dictionary value" : {
+            "font" : ".AppleSystemUIFont 12",
+            "algorithm" : 0,
+            "auto-rainbow style" : 1
+          }
+        }
+      },
+      {
+        "class" : "iTermStatusBarNetworkUtilizationComponent",
+        "configuration" : {
+          "knobs" : {
+            "base: priority" : 5,
+            "base: compression resistance" : 1,
+            "shared text color" : {
+              "Red Component" : 0.63,
+              "Color Space" : "sRGB",
+              "Blue Component" : 0.90000000000000002,
+              "Alpha Component" : 1,
+              "Green Component" : 0.72719999999999996
+            }
+          },
+          "layout advanced configuration dictionary value" : {
+            "font" : ".AppleSystemUIFont 12",
+            "algorithm" : 0,
+            "auto-rainbow style" : 1
+          }
+        }
+      },
+      {
+        "class" : "iTermStatusBarBatteryComponent",
+        "configuration" : {
+          "knobs" : {
+            "base: priority" : 5,
+            "shared text color" : {
+              "Red Component" : 0.90000000000000002,
+              "Color Space" : "sRGB",
+              "Blue Component" : 0.77580000000000005,
+              "Alpha Component" : 1,
+              "Green Component" : 0.63
+            },
+            "base: compression resistance" : 1
+          },
+          "layout advanced configuration dictionary value" : {
+            "font" : ".AppleSystemUIFont 12",
+            "algorithm" : 0,
+            "auto-rainbow style" : 1
+          }
+        }
+      }
+    ],
+    "advanced configuration" : {
+      "font" : ".AppleSystemUIFont 12",
+      "auto-rainbow style" : 1,
+      "algorithm" : 0
+    }
+  },
   "Brighten Bold Text" : true,
   "Flashing Bell" : false,
   "Cursor Guide Color" : {
@@ -426,7 +520,7 @@
   "Smart Cursor Color" : false,
   "Ambiguous Double Width" : false,
   "Blur Radius" : 4.3804033153553288,
-  "Background Image Mode" : 2,
+  "Background Image Mode" : 0,
   "Cursor Type" : 0,
   "Ansi 0 Color" : {
     "Red Component" : 0,
@@ -450,7 +544,7 @@
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 1,
   "Option Key Sends" : 0,
-  "Only The Default BG Color Uses Transparency" : false,
+  "Only The Default BG Color Uses Transparency" : true,
   "Blink Allowed" : false,
   "Minimum Contrast" : 0.10100763494318182,
   "Ansi 15 Color" : {
@@ -460,7 +554,7 @@
     "Alpha Component" : 1,
     "Green Component" : 1
   },
-  "Unicode Version" : 8,
+  "Unicode Version" : 9,
   "Ansi 6 Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",

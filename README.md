@@ -45,6 +45,14 @@ Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-th
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
+## Status bar
+iTerm2 offers a very handy Status Bar view that you can customize to display the components of your desires.
+#### To enable it:
+1. Go to iTerm2 > Preferences > Profiles > Session
+1. Turn on Status bar enabled
+1. Click on Configure Status Bar to begin setting up your status bar configuration by dragging components from Status Bar Components Menu into Active Components.
+1. Click on Auto-Rainbow to finalize with a colorful touch 🌈
+
 ### Fonts
 * [Nerd Fonts](https://www.nerdfonts.com/)
 * [PowerLevel10k](https://github.com/romkatv/powerlevel10k#fonts)
