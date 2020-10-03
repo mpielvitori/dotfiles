@@ -1,5 +1,7 @@
 # Dot files
 
+![iterm](img/iterm.png)
+
 ## [ZSH](http://zsh.org/)
 Awesome customizable shell
 * Arch: `pacman -S zsh zsh-completions`
@@ -31,8 +33,14 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 
 ### [ColorLS](https://github.com/athityakumar/colorls)
 A Ruby script that colorizes the ls output with color and icons.
-```bash
+###### Install on Linux
+```sh
 gem install colorls
+```
+##### Using brew to install ruby gem
+```sh
+brew install brew-gem
+brew gem install colorls
 ```
 To add some short command (say, lc) with some flag options (say, -l, -A, --sd) by default, add this to your shell configuration file (~/.bashrc, ~/.zshrc, etc.) :
 ```
@@ -61,5 +69,6 @@ iTerm2 offers a very handy Status Bar view that you can customize to display the
   - [MesloLGS NF Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)
   - [MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
 
-### [Color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)
+### Extras
+* [Color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
