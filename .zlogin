@@ -8,4 +8,4 @@
 } &!
 
 # show fortune message
-fortune -s computers | cowsay | lolcat
+# fortune -s computers | cowsay | lolcat
